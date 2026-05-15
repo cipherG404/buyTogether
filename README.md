@@ -1,1 +1,2 @@
-# buyTogether
+# BuyTogether
+https://stille-w.github.io/BuyTogether/

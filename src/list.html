@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>List</title>
+  <!-- or link to the CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/list.css" rel="stylesheet" type="text/css" />
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Laila:wght@300;400&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="loading">
+    <img src="../img/loading01.gif" alt="">
+  </div>
+  <section class="bg">
+    <div class="naviBar">
+      <div class="search">
+        <img class="searchImg" src="../img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItems">
+        <a href="about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="items.html">
+          <div class="navItem">Items</div>
+        </a> 
+        <a href="cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="navBarMobile">
+      <div class="search">
+        <img class="searchImg" src="../img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItemsMobile">
+        <div class="listBtn" id="listBtn">
+          <img src="../img/list.png" alt="">
+        </div>  
+      </div>
+    </div>
+    <div class="menuMobile" id="menuMobile">
+      <div class="closeBtn" id="closeBtn">
+        <img src="../img/cancel.png" alt="">
+      </div>
+      <div class="navItems">
+        <a href="about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="items.html">
+          <div class="navItem">Items</div>
+        </a> 
+        <a href="cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="center">
+        <div class="home">
+          <a href="../index.html">
+            <img src="../img/home.png" alt="">
+          </a>
+        </div>
+        <div class="user">
+          Hello, User
+          <div class="userBar">
+            <div class="profile">
+              Profile
+            </div>
+            <select id="selectMM">
+              <option class="defaultOpt" value="">-- Sort by Month --</option>
+              <div class="options">
+                <option value="1">2022/01</option>
+                <option value="2">2022/02</option>
+                <option value="3">2022/03</option>
+                <option value="4">2022/04</option>
+              </div>
+            </select>
+          </div>
+        </div>
+        <hr/>
+        <div class="load">
+          <img src="../img/load.gif" alt="">
+        </div>
+        <div class="month" id="month">2022/06</div>
+        <div class="table">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Cost</th>
+                <th>Order Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ab/Diamond_JE3_BE3.png" alt="">
+                </td>
+                <td>
+                  diamond
+                  <p class="subDesc">diiiig</p>    
+                </td>
+                <td id="price0">$1000</td>
+                <td>
+                  <div class="qty" id="qty0">5</div>
+                </td>
+                <td id="cost0">$0</td>
+                <td>
+                  yyyy-MM-dd EEE<br/>HH:mm:ss zzz
+                </td>
+                <td>
+                  Unfulfilled
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <img src="https://1.bp.blogspot.com/-8A5ACZzxzIc/VSufmA9-XMI/AAAAAAAAs-w/KHJbK1TW9s4/s800/food_konbini_onigiri.png" alt="">
+                </td>
+                <td>
+                  onigiri
+                  <p class="subDesc">fujiyamart</p>
+                </td>
+                <td id="price1">$300</td>
+                <td>
+                  <div class="qty" id="qty1">50</div>
+                </td>
+                <td id="cost1">$0</td>
+                <td>
+                  yyyy-MM-dd EEE<br/>HH:mm:ss zzz
+                </td>
+                <td>
+                  Unfulfilled
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <img src="https://1.bp.blogspot.com/-iNgeH_788Xg/XkZc3IM0EHI/AAAAAAABXQo/-KKL7UOBQZ49XORoXf8F90U9H5v2iJv3wCNcBGAsYHQ/s1600/food_niku_yakiniku_set.png" alt="">
+                </td>
+                <td>
+                  meat
+                  <p class="subDesc">nuggets</p>
+                </td>
+                <td id="price2">$599</td>
+                <td>
+                  <div class="qty" id="qty2">20</div>
+                </td>
+                <td id="cost2">$0</td>
+                <td>
+                  2022-02-09 Wed<br/>12:29:33 CST
+                </td>
+                <td>
+                  Fulfilled
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <a href="item.html">
+                    <img src="https://1.bp.blogspot.com/-Usx3IgJOMeI/XexqUoddTKI/AAAAAAABWe4/kgic5jZ9es0bNkRn7Mw8SkgwcyB31XZ9QCNcBGAsYHQ/s1600/food_cheese_emmental.png" alt="">
+                  </a> 
+                </td>
+                <td>
+                  cheese
+                  <p class="subDesc">Jerry</p>
+                </td>
+                <td id="price3">$100</td>
+                <td>
+                  <div class="qty" id="qty3">33</div>
+                </td>
+                <td id="cost3">$0</td>
+                <td>
+                  yyyy-MM-dd EEE<br/>HH:mm:ss zzz
+                </td>
+                <td>
+                  Unfulfilled
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <img src="https://1.bp.blogspot.com/-JaRzIloEZw4/UgSMOL-UzYI/AAAAAAAAW_A/vOiX6Tz5oO4/s800/fruit_banana.png" alt="">
+                </td>
+                <td>
+                  banana
+                  <p class="subDesc">eyyyy</p>
+                </td>
+                <td id="price4">$80</td>
+                <td>
+                  <div class="qty" id="qty4">52</div>
+                </td>
+                <td id="cost4">$0</td>
+                <td>
+                  2022-05-02 Mon<br/>08:03:44 EDT
+                </td>
+                <td>
+                  Fulfilled
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tableMobile">
+          <table id="tableMobile">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="descMobile">
+                    <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ab/Diamond_JE3_BE3.png" alt="">
+                    <div class="descText">
+                      <p class="descName">diamond</p>
+                      <p class="subDesc">diiiig</p>
+                      <p class="descPrice" id="mobilePrice0">$1000</p>
+                      <p class="date">yyyy-MM-dd EEE HH:mm:ss zzz</p>
+                    </div>
+                    <div class="index">#1</div>
+                  </div>
+                  <div class="btnBarMobile">
+                    <div class="status">Unfulfilled</div>
+                    <div class="barRight">
+                      <div class="descQty" id="mobileQty0">Qty: 5</div>
+                      <div class="costMobile" id="mobileCost0">$0</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="descMobile">
+                    <img src="https://1.bp.blogspot.com/-8A5ACZzxzIc/VSufmA9-XMI/AAAAAAAAs-w/KHJbK1TW9s4/s800/food_konbini_onigiri.png" alt="">
+                    <div class="descText">
+                      <p class="descName">onigiri</p>
+                      <p class="subDesc">fujiyamart</p>
+                      <p class="descPrice" id="mobilePrice1">$300</p>
+                      <p class="date">yyyy-MM-dd EEE HH:mm:ss zzz</p>
+                    </div>
+                    <div class="index">#2</div>
+                  </div>
+                  <div class="btnBarMobile">
+                    <div class="status">Unfulfilled</div>
+                    <div class="barRight">
+                      <div class="descQty" id="mobileQty1">Qty: 50</div>
+                      <div class="costMobile" id="mobileCost1">$0</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="descMobile">
+                    <img src="https://1.bp.blogspot.com/-iNgeH_788Xg/XkZc3IM0EHI/AAAAAAABXQo/-KKL7UOBQZ49XORoXf8F90U9H5v2iJv3wCNcBGAsYHQ/s1600/food_niku_yakiniku_set.png" alt="">
+                    <div class="descText">
+                      <p class="descName">meat</p>
+                      <p class="subDesc">nuggets</p>
+                      <p class="descPrice" id="mobilePrice2">$599</p>
+                      <p class="date">2022-02-09 Wed 12:29:33 CST</p>
+                    </div>
+                    <div class="index">#3</div>
+                  </div>
+                  <div class="btnBarMobile">
+                    <div class="status">Fulfilled</div>
+                    <div class="barRight">
+                      <div class="descQty" id="mobileQty2">Qty: 20</div>
+                      <div class="costMobile" id="mobileCost2">$0</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="descMobile">
+                    <a href="item.html">
+                      <img src="https://1.bp.blogspot.com/-Usx3IgJOMeI/XexqUoddTKI/AAAAAAABWe4/kgic5jZ9es0bNkRn7Mw8SkgwcyB31XZ9QCNcBGAsYHQ/s1600/food_cheese_emmental.png" alt="">
+                    </a>
+                    <div class="descText">
+                      <p class="descName">cheese</p>
+                      <p class="subDesc">Jerry</p>
+                      <p class="descPrice" id="mobilePrice3">$100</p>
+                      <p class="date">yyyy-MM-dd EEE HH:mm:ss zzz</p>
+                    </div>
+                    <div class="index">#4</div>  
+                  </div>
+                  <div class="btnBarMobile">
+                    <div class="status">Unfulfilled</div>
+                    <div class="barRight">
+                      <div class="descQty" id="mobileQty3">Qty: 33</div>
+                      <div class="costMobile" id="mobileCost3">$0</div>
+                    </div> 
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="descMobile">
+                    <img src="https://1.bp.blogspot.com/-JaRzIloEZw4/UgSMOL-UzYI/AAAAAAAAW_A/vOiX6Tz5oO4/s800/fruit_banana.png" alt="">
+                    <div class="descText">
+                      <p class="descName">banana</p>
+                      <p class="subDesc">eyyyy</p>
+                      <p class="descPrice" id="mobilePrice4">$80</p>
+                      <p class="date">2022-05-02 Mon 08:03:44 EDT</p>
+                    </div>
+                    <div class="index">#5</div>
+                  </div>
+                  <div class="btnBarMobile">
+                    <div class="status">Fulfilled</div>
+                    <div class="barRight">
+                      <div class="descQty" id="mobileQty4">Qty: 52</div>
+                      <div class="costMobile" id="mobileCost4">$0</div>
+                    </div> 
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+     
+    </div>
+    
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/list.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+</body>
+
+</html>

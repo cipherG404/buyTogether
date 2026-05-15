@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Buy Together</title>
+  <!-- or link to the CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Laila:wght@300;400&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="loading">
+    <img src="img/loading01.gif" alt="">
+  </div>
+  <section class="bg">
+    <div class="naviBar">
+      <div class="search">
+        <img class="searchImg" src="img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItems">
+        <a href="src/about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="src/items.html">
+           <div class="navItem">Items</div>
+        </a> 
+        <a href="src/cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="src/list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="navBarMobile">
+      <div class="search">
+        <img class="searchImg" src="img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItemsMobile">
+        <div class="listBtn" id="listBtn">
+          <img src="img/list.png" alt="">
+        </div>  
+      </div>
+    </div>
+    <div class="menuMobile" id="menuMobile">
+      <div class="closeBtn" id="closeBtn">
+        <img src="img/cancel.png" alt="">
+      </div>
+      <div class="navItems">
+        <a href="src/about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="src/items.html">
+           <div class="navItem">Items</div>
+        </a>       
+        <a href="src/cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="src/list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <div class="title">
+          <p>Buy<br/>Together</p>
+        </div>
+      </div>
+      <div class="right">
+        <div id="thumbnail-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="https://3.bp.blogspot.com/-ZlMc0a3rz7o/Wge8Gq3FgLI/AAAAAAABIFg/rRq1K0xlnEojrMexMxCzIT6_6WnwHqh2QCLcBGAs/s800/ocean_kyodai_seibutsu.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="https://1.bp.blogspot.com/-grR0-27HeAk/Xo-8A7L5NXI/AAAAAAABYOc/S25Dd_VUJv4iEQfjem3b-gbvYZZu6tACACNcBGAsYHQ/s1600/bg_sakura_night.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+               <img src="https://1.bp.blogspot.com/-iuZL2O_DPsg/XhwqyVZMhrI/AAAAAAABXEY/oW-_x39E7-UZRAlUiMlDw8aLeRKxNzkngCNcBGAsYHQ/s1600/taki_hyoubaku.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="https://1.bp.blogspot.com/-Y2WCNS2K-HM/XVjgI3zZh2I/AAAAAAABUMk/tM-BaqaPHpYV2Nofl9wRpjlgLoZ9bJISgCLcBGAs/s1600/japan_gassyoudukuri_syuuraku.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="https://3.bp.blogspot.com/-3zXHhK4EsCc/XLAcx0NOeQI/AAAAAAABSS4/hwoF9buOEJwyh9aE-yMfVSpChdNe9EXQACLcBGAs/s800/bg_himawari_hatake.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="https://2.bp.blogspot.com/-ojAdyR_k4sA/WwJZd4xKnQI/AAAAAAABMFA/dY18tuda4CQu9mpwypyNubSUlhZKyHbeACLcBGAs/s800/bg_rain_natural_flower.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="https://2.bp.blogspot.com/-sxIKLgloA-0/Wi4f1HIuZNI/AAAAAAABIrA/cp2E-kc656EGf5sQgdCSxxuc6j2ldjNwgCLcBGAs/s800/bg_takeyabu.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide', {
+        rewind: true,
+        rewindByDrag: true,
+      } );
+      splide.mount();
+    } );
+  </script>
+</body>
+
+</html>

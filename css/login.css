@@ -1,0 +1,136 @@
+/* https://images.unsplash.com/photo-1655633584060-c875b9821061?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTU4Nzg0Njc&ixlib=rb-1.2.1&q=80 */
+
+* {
+  position: relative;
+}
+
+.bg {
+   background-image: 
+    linear-gradient(0, rgba(255,255,255,0.8), rgba(255,255,255,0.5)),
+    url("https://images.unsplash.com/photo-1655633584060-c875b9821061?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTU4Nzg0Njc&ixlib=rb-1.2.1&q=80");
+}
+
+.center {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 16%;
+}
+
+.loginContent {
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 32px 40px 16px 40px;
+  border-radius: 10px;
+  border: 2px solid #666666;
+  backdrop-filter: blur(4px);
+  margin: 36px;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.column.active {
+  display: none;
+}
+
+.instr {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.instr p {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.instr .subP {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-top: -4px;
+  margin-left: 16px;
+}
+
+.subP:before {
+  content: '';
+  width: 4px;
+  height: 100%;
+  background: #8c8c8c;
+  position: absolute;
+  top: 0;
+  margin-left: -10px;
+}
+
+.column input[type="text"] {
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #666666;
+  transition: all 0.2s;
+}
+
+.column input[type="text"]:hover {
+  border: 2px solid #bfbfbf;
+}
+
+.loginArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginArea.active {
+  display: none;
+}
+
+.loginBtn {
+  font-size: 20px;
+  color: white;
+  font-family: 'Laila', sans-serif;
+  background: #666666;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 3% 24%;
+  margin: 8px 16px 16px 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.loginBtn:hover {
+  color: #666666;
+  background: transparent;
+  border: 2px solid #666666;
+}
+
+.loginSucc {
+  font-size: 18px;
+  color: #666666;
+  font-family: 'Laila', sans-serif;
+  display: none;
+}
+
+.loginSucc.active {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .loginContent {
+    width: auto;
+  }
+}

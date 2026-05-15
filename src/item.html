@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cheese</title>
+  <!-- or link to the CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/item.css" rel="stylesheet" type="text/css" />
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Laila:wght@300;400&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="loading">
+    <img src="../img/loading01.gif" alt="">
+  </div>
+  <section class="bg">
+    <div class="naviBar">
+      <div class="search">
+        <img class="searchImg" src="../img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItems">
+        <a href="about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="items.html">
+          <div class="navItem">Items</div>
+        </a> 
+        <a href="cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="navBarMobile">
+      <div class="search">
+        <img class="searchImg" src="../img/search.png" alt="">
+        <input class="searchBar" type="text">
+      </div>
+      <div class="navItemsMobile">
+        <div class="listBtn" id="listBtn">
+          <img src="../img/list.png" alt="">
+        </div>  
+      </div>
+    </div>
+    <div class="menuMobile" id="menuMobile">
+      <div class="closeBtn" id="closeBtn">
+        <img src="../img/cancel.png" alt="">
+      </div>
+      <div class="navItems">
+        <a href="about.html">
+          <div class="navItem">About</div>
+        </a>
+        <a href="items.html">
+          <div class="navItem">Items</div>
+        </a> 
+        <a href="cart.html">
+          <div class="navItem">Cart</div>
+        </a>
+        <a href="list.html">
+          <div class="navItem">List</div>
+        </a> 
+        <button class="log login">Login</button>
+        <button class="log logout">Logout</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="center">
+        <div class="home">
+          <a href="../index.html">
+            <img src="../img/home.png" alt="">
+          </a>
+        </div>
+        <div class="itemDetail">
+          <div class="itemThumb">
+            <div id="thumbnail-carousel" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="https://1.bp.blogspot.com/-Usx3IgJOMeI/XexqUoddTKI/AAAAAAABWe4/kgic5jZ9es0bNkRn7Mw8SkgwcyB31XZ9QCNcBGAsYHQ/s1600/food_cheese_emmental.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="https://3.bp.blogspot.com/--gKUyA0SJAU/U7O8AtlXE2I/AAAAAAAAiYA/iwiyeNm95mo/s800/cheese_camembert.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                   <img src="https://3.bp.blogspot.com/-82DXcm-FWJg/U7O8BgjV5pI/AAAAAAAAiYc/3HQ3vrinFEE/s800/cheese_slice.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="https://4.bp.blogspot.com/-4hZNZ1J6IhQ/U7O8AZAx0cI/AAAAAAAAiX8/iR5tGo8Ry_A/s800/cheese_blue.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="itemDesc">
+            <div class="descTitle">
+              <div class="leftTitle">
+                <p class="main">Cheese</p>
+                <p class="sub">Jerry</p>
+              </div>
+              <div class="rightPrice">
+                <div class="price" id="price">$100</div>
+              </div>           
+            </div>
+            <div class="descText">
+              <div class="desc">
+                Most recommanded cheese by Jerry ! <br/>
+                Should take it a try even if chased by Tom. <br/>
+                It is melty, smoothe, and tasty than you can ever image,
+                what's more, Jerry recommands to melt it with warm fire,
+                which won't make it that hot to burn your mouth, <br/>
+                but hotter than your mom !
+              </div>
+              <div class="priceBar">
+                
+              </div>
+            </div>
+            <div class="btnBar">
+              <button class="btn min">-</button>
+              <div class="qty" id="qty">1</div>
+              <button class="btn plus">+</button>
+              <div class="total">Total:
+                <span class="cost" id="cost">$100</span>
+              </div>
+            </div>
+            <p class="txt" id="label"></p>
+            <button class="add2Cart" type="submit">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+  </section>
+
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/item.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+</body>
+
+</html>
