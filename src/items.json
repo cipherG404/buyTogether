@@ -1,0 +1,132 @@
+{
+  "products": [
+     {
+      "thumbnail": "https://1.bp.blogspot.com/-Usx3IgJOMeI/XexqUoddTKI/AAAAAAABWe4/kgic5jZ9es0bNkRn7Mw8SkgwcyB31XZ9QCNcBGAsYHQ/s1600/food_cheese_emmental.png",
+      "url": "item.html",
+      "name": "Cheese",
+      "brand": "Jerry",
+      "price": 100,
+      "isHot": true
+    },
+    {
+      "thumbnail": "https://blogger.googleusercontent.com/img/a/AVvXsEih34bIfzZkekWB1FpyNms7yOgPcow95tmcpDS9rajsRVR33qWHuX9hKy7ObTMOmOMgLHTlUe7ZtES_U3UmMpAyBLZ6PGcBqAnk0mlw0jG16JMg4e587riBC9bzk8X07Dv2SFhb_pMqUwjOGZo9oNXupGuQ7j0CLOLss7cb4pHuul5uWc-Naa0se3EdmQ=s648",
+      "url": "item.html",
+      "name": "Energy Bar",
+      "brand": "Sneeckers",
+      "price": 111,
+      "isHot": true
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-GDwxi0IvGRY/YVwDFL13q2I/AAAAAAABfcY/T6XsZ00_7GMlL4LWPqYRgWKRV22LdHK8wCNcBGAsYHQ/s717/food_taiwan_shentoujan.png",
+      "url": "item.html",
+      "name": "salted soymilk",
+      "brand": "YH",
+      "price": 24,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-XGjRT7F4-Kw/X9lJVQw7IiI/AAAAAAABc30/0am17JnAj20tGtMiDVeW91pGCKwhWGxvACNcBGAsYHQ/s663/food_udon_ippoin.png",
+      "url": "item.html",
+      "name": "Udon",
+      "brand": "dondon",
+      "price": 334,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-jo3jbr4SJMw/X9GYG9m5ZQI/AAAAAAABctI/_NKwZsBvCkUJzcvlHiSVYCswMdrdLIkowCNcBGAsYHQ/s509/food_pizza_whole_quarter.png",
+      "url": "item.html",
+      "name": "Pizza",
+      "brand": "Bizzahut",
+      "price": 175,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-qhYAfhwkjSo/X7zMZxJhrUI/AAAAAAABca0/X7Cu6-X8DxUFyTO1hS1GhGk-KOi4cknDACNcBGAsYHQ/s689/food_spaghetti_vongole_bianco.png",
+      "url": "item.html",
+      "name": "Spaghetti",
+      "brand": "Zaliyah",
+      "price": 175,
+      "isHot": true
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-hpn9X8TUQW4/XzXk0_WmegI/AAAAAAABamU/k0e6lG3XzyYiph2LloEhjHWcVjmvLaUrACNcBGAsYHQ/s1600/food_retoruto_curry_rice.png",
+      "url": "item.html",
+      "name": "Curry",
+      "brand": "KoKo",
+      "price": 188,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-YKJVR2s8onU/XiZ879vTRGI/AAAAAAABXJI/hf6TBR25XWgrjKhq_esz1kW6anfj0-N7ACNcBGAsYHQ/s1600/nabe_kimuchi.png",
+      "url": "item.html",
+      "name": "Hot pot",
+      "brand": "Niku",
+      "price": 899,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-t1x3V17O8zU/XdttUjcmU_I/AAAAAAABWG0/14Q99Uqp-_wVac7kXdFcgOa8-efUqZlfQCNcBGAsYHQ/s1600/cooking_camp_bbq.png",
+      "url": "item.html",
+      "name": "BBQ",
+      "brand": "Kangbai",
+      "price": 45667,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9f4YcWAPTBI/Xbo7HgRcxfI/AAAAAAABVy4/LDJhEVMjyFIsz5z6XZp-_OibrBUBqfjtwCNcBGAsYHQ/s1600/food_gyouza_enban.png",
+      "url": "item.html",
+      "name": "Dumplings",
+      "brand": "AchtWeg",
+      "price": 669,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": true
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": false
+    },
+    {
+      "thumbnail": "https://1.bp.blogspot.com/-9TS7PC3-erg/YVwDF745lNI/AAAAAAABfcg/NHIeCHaH4hcOO7QOf9CjQIDiClr-ivH6gCNcBGAsYHQ/s708/food_tamago_gohan2.png",
+      "url": "item.html",
+      "name": "Rice",
+      "brand": "RiceCooker",
+      "price": 9,
+      "isHot": false
+    }
+  ]
+}
