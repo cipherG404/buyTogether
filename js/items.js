@@ -1,7 +1,7 @@
 let itemWrapper = document.getElementById('itemWrapper');
 
 // 串接後端api（json格式）
-fetch("https://raw.githubusercontent.com/Stille-W/git-20220529/main/items.json")
+fetch("https://raw.githubusercontent.com/cipherG404/buyTogether/refs/heads/main/src/items.json")
   .then(function(response) {
     // console.log(response);
     return response.json();
