@@ -1,2 +1,2 @@
 # BuyTogether
-https://stille-w.github.io/BuyTogether/
+https://cipherg404.github.io/buyTogether/
